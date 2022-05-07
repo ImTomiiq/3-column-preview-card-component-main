@@ -79,3 +79,48 @@ html {
     }
   }
 }
+
+.card--2 {
+  background-color: $color-dark-cyan;
+  padding: 5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: block;
+  &__content {
+    * {
+      padding-bottom: 1.5rem;
+    }
+    &__header {
+      color: $color-transparent-white;
+      font-family: "Big Shoulders Display", cursive;
+      font-weight: 700;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+    &__text {
+      color: $color-transparent-white;
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+    }
+    &__button {
+      padding-bottom: 0;
+      button {
+        background-color: white;
+        padding: 1.5rem 3.5rem;
+        border-radius: 3rem;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $color-dark-cyan;
+        border: 3px solid $color-transparent-white;
+        transition: all 0.5s;
+        &:hover {
+          transition: all 0.5s;
+          background-color: transparent;
+          color: $color-transparent-white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
